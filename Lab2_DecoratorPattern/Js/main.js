@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var PlainText_1 = require("./PlainText");
+var BoldText_1 = require("./BoldText");
+var ItalicText_1 = require("./ItalicText");
+var StrikeOutText_1 = require("./StrikeOutText");
+var text = "Hello World";
+var decoratedText = new StrikeOutText_1.StrikeOutText(new ItalicText_1.ItalicText(new BoldText_1.BoldText(new PlainText_1.PlainText(text))));
+//const decoratedText = new PlainText(text);
+console.log("printing :" + decoratedText);
